@@ -3,12 +3,15 @@ const countryChile = 'Чили';
 const countryAustralia = 'Австралия';
 const countryIndia = 'Индию';
 const countryJamaica = 'Ямайку'; 
-let countryChinaPrice = 100;
-let countryChilePrice = 250;
-let countryAustraliaPrice = 170;
-let countryIndiaPrice = 80;
-let countryJamaicaPrice = 120;
+const countryChinaPrice = 100;
+const countryChilePrice = 250;
+const countryAustraliaPrice = 170;
+const countryIndiaPrice = 80;
+const countryJamaicaPrice = 120;
 const inputCountry = prompt('Введите страну');
+if (inputCountry === null) {
+  alert('Отменено пользователем!');
+}
 switch (inputCountry.toLowerCase()) {
   case 'китай':
     console.log(`Доставка в ${countryChina} будет стоить ${countryChinaPrice} кредитов`);
