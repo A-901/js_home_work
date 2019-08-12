@@ -1,0 +1,17 @@
+const users = ['Mango', 'Poly', 'Ajax', 'Chelsey'];
+console.log(users);
+console.log(users.shift());
+console.log(users);
+console.log(users.pop());
+console.log(users);
+users.unshift('Lux');
+console.log(users);
+users.push('Jay, Kiwi');
+console.log(users);
+const userToDelete = 'Ajax';
+users.splice(users.indexOf(userToDelete), 1);
+console.log(users);
+const userToInsert = 'Kong';
+const insertBefore = 'Jay';
+users.splice(2, 0, insertBefore, userToInsert);
+console.log(users);
