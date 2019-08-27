@@ -10,9 +10,12 @@ while (input !== null) {
   else {
     numbers.push(Number(input));
   }
+  
 }
+if (numbers.length !== 0) {
 for (let i = 0; i < numbers.length; i++) {
   total += numbers[i];
+}
 }
 alert(`Общая сумма чисел равна ${total}`);
 
