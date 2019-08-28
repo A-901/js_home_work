@@ -12,10 +12,8 @@ while (input !== null) {
   }
   
 }
-if (numbers.length !== 0) {
-for (let i = 0; i < numbers.length; i++) {
-  total += numbers[i];
+for (let number of numbers) {
+  total += number;
 }
-}
-alert(`Общая сумма чисел равна ${total}`);
+console.log(`Общая сумма чисел равна ${total}`);
 
